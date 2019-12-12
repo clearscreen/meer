@@ -197,11 +197,11 @@ bool Decode_JSON( char *json_string )
                 }
 
 
-            if ( MeerOutput->pipe_enabled == true )
+            /*if ( MeerOutput->pipe_enabled == true )
                 {
                     strlcpy(tmp_type, json_object_get_string(tmp), sizeof(tmp_type));
                     Output_Pipe(tmp_type, json_string );
-                }
+                }*/
 
 #ifdef HAVE_LIBHIREDIS
 
