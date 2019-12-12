@@ -48,7 +48,7 @@
 #include "config-yaml.h"
 
 #include "output-plugins/sql.h"
-#include "output-plugins/pipe.h"
+/* #include "output-plugins/pipe.h" */
 #include "output-plugins/external.h"
 #include "output-plugins/fingerprint.h"
 
@@ -125,7 +125,7 @@ void Init_Output( void )
 
 #endif
 
-    if ( MeerOutput->pipe_enabled )
+ /*   if ( MeerOutput->pipe_enabled )
         {
             uint32_t current_pipe_size = 0;
             uint32_t fd_results = 0;
@@ -170,6 +170,7 @@ void Init_Output( void )
             Meer_Log(NORMAL, "");
 
         }
+*/
 
 #if defined(HAVE_LIBMYSQLCLIENT) || defined(HAVE_LIBPQ)
 
@@ -259,7 +260,7 @@ void Init_Output( void )
 /****************************************************************************
  * Output_Pipe - Determines what data/JSON should be sent to the named pipe
  ****************************************************************************/
-
+/*
 bool Output_Pipe ( char *type, char *json_string )
 {
 
@@ -322,7 +323,7 @@ bool Output_Pipe ( char *type, char *json_string )
     return 1;
 
 }
-
+*/
 /****************************************************************************
  * Output_Alert_SQL - Sends decoded data to a MySQL/PostgreSQL database using
  * a similar format to Barnyard2 (with some extra data added in!)

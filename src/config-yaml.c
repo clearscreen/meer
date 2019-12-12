@@ -154,7 +154,7 @@ void Load_YAML_Config( char *yaml_file )
     MeerConfig->oui = false;
 
 
-    MeerOutput->pipe_size =  DEFAULT_PIPE_SIZE;
+//    MeerOutput->pipe_size =  DEFAULT_PIPE_SIZE;
 
     if (stat(yaml_file, &filecheck) != false )
         {
@@ -256,11 +256,11 @@ void Load_YAML_Config( char *yaml_file )
                                     sub_type = YAML_MEER_SQL;
                                 }
 
-                            if ( !strcmp(value, "pipe") )
+/*                            if ( !strcmp(value, "pipe") )
                                 {
                                     sub_type = YAML_MEER_PIPE;
                                 }
-
+*/
                             if ( !strcmp(value, "external") )
                                 {
                                     sub_type = YAML_MEER_EXTERNAL;
@@ -1160,7 +1160,7 @@ void Load_YAML_Config( char *yaml_file )
 
 #endif
 
-                    if ( type == YAML_TYPE_OUTPUT && sub_type == YAML_MEER_PIPE )
+ /*                   if ( type == YAML_TYPE_OUTPUT && sub_type == YAML_MEER_PIPE )
                         {
 
                             if ( !strcmp(last_pass, "enabled" ) )
@@ -1295,7 +1295,7 @@ void Load_YAML_Config( char *yaml_file )
                                 }
 
 
-                        }
+                        }*/
 
                     strlcpy(last_pass, value, sizeof(last_pass));
 

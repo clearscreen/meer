@@ -93,7 +93,7 @@ void Statistics( void )
 
         }
 
-    if ( MeerOutput->pipe_enabled == true )
+/*   if ( MeerOutput->pipe_enabled == true )
         {
 
             Meer_Log(NORMAL, " - Pipe Statistics:");
@@ -102,7 +102,7 @@ void Statistics( void )
             Meer_Log(NORMAL, " JSON misses/errors : %"PRIu64 " (%.3f%%)", MeerCounters->JSONPipeMisses, CalcPct(MeerCounters->JSONPipeWrites, MeerCounters->JSONPipeMisses));
 
         }
-
+*/
     if ( MeerOutput->external_enabled == true )
         {
 

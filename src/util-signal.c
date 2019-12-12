@@ -68,11 +68,11 @@ void Signal_Handler(int sig_num)
 //        case SIGABRT:
 
 
-            if ( MeerOutput->pipe_enabled == true )
+ /*           if ( MeerOutput->pipe_enabled == true )
                 {
                     close(MeerOutput->pipe_fd);
 
-                }
+                }*/
 
 #if defined(HAVE_LIBMYSQLCLIENT) || defined(HAVE_LIBPQ)
 
